@@ -1,22 +1,31 @@
 {
+	// マニフェストバージョン
 	"manifest_version": 2,
+	// 拡張機能名
 	"name": "ShortCat",
+	// 拡張機能バージョン
 	"version": "0.1",
 
+	// 説明
 	"description": "Shortcut Extension",
 
+	// アイコン
 	"icons": {
 		"16": "images/BlackCat_16.png",
 		"48": "images/BlackCat_48.png",
 		"128": "images/BlackCat_128.png"
 	},
 
+	// ブラウザアクション
 	"browser_action": {
+		// アイコン
 		"default_icon": {
 			"19": "images/BlackCat_19.png",
 			"38": "images/BlackCat_38.png"
 		},
+		// タイトル
 		"default_title": "ShortCat",
+		// ポップアップページ
 		"default_popup": "popup.html"
 	}
 

@@ -2,91 +2,201 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<!-- タイトル -->
+<title>Short Cat</title>
 
+<!-- スタイルシート -->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/shortcat.css" media="all" />
 
 </head>
 <body>
+	<!-- ヘッダ -->
+	<header>
+		<h2>ShortCat</h2>
+	</header>
 
-<header>
-<h2>ShortCat</h2>
-</header>
+	<!-- タブ -->
+	<ul class="nav nav-pills" role="tablist">
+		<li role="presentation" class="active"><a href="#keyboard" aria-controls="keyboard" role="tab" data-toggle="tab">Keyboard</a></li>
+		<li role="presentation"><a href="#list" aria-controls="list" role="tab" data-toggle="tab">List</a></li>
+		<li role="presentation"><a href="#add" aria-controls="add" role="tab" data-toggle="tab">Add</a></li>
+		<li role="presentation"><a href="#setting" aria-controls="setting" role="tab" data-toggle="tab">Settnig</a></li>
+	</ul>
 
-<nav>
-<ul class="nav nav-pills">
-	<li role="presentation" class="active"><a href="#">Keyboard</a></li>
-	<li role="presentation"><a href="#">List</a></li>
-	<li role="presentation"><a href="#">Add</a></li>
-</ul>
-</nav>
+	<!--  -->
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="keyboard">
+			<div class="tab_panel">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div id="btn-toolbar-1st" class="btn-toolbar" role="toolbar"
+							aria-label="first_toolbar">
+							<button class="btn btn-default key">1</button>
+							<button class="btn btn-default key">2</button>
+							<button class="btn btn-default key">3</button>
+							<button class="btn btn-default key">4</button>
+							<button class="btn btn-default key">5</button>
+							<button class="btn btn-default key">6</button>
+							<button class="btn btn-default key">7</button>
+							<button class="btn btn-default key">8</button>
+							<button class="btn btn-default key">9</button>
+							<button class="btn btn-default key">0</button>
+							<button class="btn btn-default key">-</button>
+							<button class="btn btn-default key">^</button>
+						</div>
 
-<section>
-<div class="panel panel-default">
-<div class="btn-toolbar btn-toolbar-1st" role="toolbar" aria-label="first_toolbar">
-	<button class="btn btn-default key">1</button>
-	<button class="btn btn-default key">2</button>
-	<button class="btn btn-default key">3</button>
-	<button class="btn btn-default key">4</button>
-	<button class="btn btn-default key">5</button>
-	<button class="btn btn-default key">6</button>
-	<button class="btn btn-default key">7</button>
-	<button class="btn btn-default key">8</button>
-	<button class="btn btn-default key">9</button>
-	<button class="btn btn-default key">0</button>
-</div>
+						<div id="btn-toolbar-2nd" class="btn-toolbar" role="toolbar"
+							aria-label="second_toolbar">
+							<button class="btn btn-default key">Q</button>
+							<button class="btn btn-default key">W</button>
+							<button class="btn btn-default key">E</button>
+							<button class="btn btn-default key">R</button>
+							<button class="btn btn-default key">T</button>
+							<button class="btn btn-default key">Y</button>
+							<button class="btn btn-default key">U</button>
+							<button class="btn btn-default key">I</button>
+							<button class="btn btn-default key">O</button>
+							<button class="btn btn-default key">P</button>
+							<button class="btn btn-default key">@</button>
+							<button class="btn btn-default key">[</button>
+						</div>
 
-<div class="btn-toolbar btn-toolbar-2nd" role="toolbar" aria-label="second_toolbar">
-	<button class="btn btn-default key">Q</button>
-	<button class="btn btn-default key">W</button>
-	<button class="btn btn-default key">E</button>
-	<button class="btn btn-default key">R</button>
-	<button class="btn btn-default key">T</button>
-	<button class="btn btn-default key">Y</button>
-	<button class="btn btn-default key">U</button>
-	<button class="btn btn-default key">I</button>
-	<button class="btn btn-default key">O</button>
-	<button class="btn btn-default key">P</button>
-</div>
+						<div id="btn-toolbar-3rd" class="btn-toolbar" role="toolbar"
+							aria-label="third_toolbar">
+							<button class="btn btn-default key">A</button>
+							<button class="btn btn-default key">S</button>
+							<button class="btn btn-default key">D</button>
+							<button class="btn btn-default key">F</button>
+							<button class="btn btn-default key">G</button>
+							<button class="btn btn-default key">H</button>
+							<button class="btn btn-default key">J</button>
+							<button class="btn btn-default key">K</button>
+							<button class="btn btn-default key">L</button>
+							<button class="btn btn-default key">;</button>
+							<button class="btn btn-default key">:</button>
+							<button class="btn btn-default key">]</button>
+						</div>
 
-<div class="btn-toolbar btn-toolbar-3rd" role="toolbar" aria-label="third_toolbar">
-	<button class="btn btn-default key">A</button>
-	<button class="btn btn-default key">S</button>
-	<button class="btn btn-default key">D</button>
-	<button class="btn btn-default key">F</button>
-	<button class="btn btn-default key">G</button>
-	<button class="btn btn-default key">H</button>
-	<button class="btn btn-default key">J</button>
-	<button class="btn btn-default key">K</button>
-	<button class="btn btn-default key">L</button>
-	<button class="btn btn-default key">;</button>
-</div>
+						<div id="btn-toolbar-4th" class="btn-toolbar" role="toolbar"
+							aria-label="fourth_toolbar">
+							<button class="btn btn-default key">Z</button>
+							<button class="btn btn-default key">X</button>
+							<button class="btn btn-default key">C</button>
+							<button class="btn btn-default key">V</button>
+							<button class="btn btn-default key">B</button>
+							<button class="btn btn-default key">N</button>
+							<button class="btn btn-default key">M</button>
+							<button class="btn btn-default key">,</button>
+							<button class="btn btn-default key">.</button>
+							<button class="btn btn-default key">/</button>
+							<button class="btn btn-default key">\</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<div class="btn-toolbar btn-toolbar-4th" role="toolbar" aria-label="fourth_toolbar">
-	<button class="btn btn-default key">Z</button>
-	<button class="btn btn-default key">X</button>
-	<button class="btn btn-default key">C</button>
-	<button class="btn btn-default key">V</button>
-	<button class="btn btn-default key">B</button>
-	<button class="btn btn-default key">N</button>
-	<button class="btn btn-default key">M</button>
-	<button class="btn btn-default key">,</button>
-	<button class="btn btn-default key">.</button>
-	<button class="btn btn-default key">/</button>
-</div>
-</div>
-</section>
-<section>
-<div class="panel panel-default">
+		<div role="tabpanel" class="tab-pane active" id="list">
+			<div class="tab_panel">
+				<div id="item_info" class="list_part panel panel-default">
+					<div class="panel-heading">Bookmark Infomation</div>
+					<div class="panel-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="edit_input_name" class="col-sm-2 control-label">Name</label>
+								<div class="col-sm-10">
+									<input id="edit_input_name" type="text" class="form-control"
+										placeholder="Bookmark Name">
+								</div>
+							</div>
 
-</div>
-</section>
+							<div class="form-group">
+								<label for="edit_input_url" class="col-sm-2 control-label">URL</label>
+								<div class="col-sm-10">
+									<input id="edit_input_url" type="text" class="form-control"
+										placeholder="Bookmark URL">
+								</div>
+							</div>
 
-<footer></footer>
+							<div id="edit_action_buttons" class="row">
+								<div class="col-sm-5 col-sm-offset-7">
+									<button type="button" class="btn btn-default">Add</button>
+									<button type="button" class="btn btn-default">Delete</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-2.2.0.min.js"></script>
+				<div id="item_list" class="list_part panel panel-default">
+					<div class="panel-heading">Bookmark List</div>
+					<div class="panel-body">
+						<div id="items" class="list-group">
+							<button type="button" class="list-group-item active">Button_01</button>
+							<button type="button" class="list-group-item">Button_02</button>
+							<button type="button" class="list-group-item">Button_03</button>
+							<button type="button" class="list-group-item">Button_04</button>
+							<button type="button" class="list-group-item">Button_05</button>
+							<button type="button" class="list-group-item">Button_06</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 追加セクション -->
+		<div role="tabpanel" class="tab-pane active" id="add">
+			<div class="tab_panel">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<form class="form-horizontal">
+
+							<div class="form-group">
+								<label for="add_input_name" class="col-sm-2 control-label">Name</label>
+								<div class="col-sm-10">
+									<input id="add_input_name" type="text" class="form-control"
+										placeholder="Bookmark Name">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="add_input_url" class="col-sm-2 control-label">URL</label>
+								<div class="col-sm-10">
+									<input id="add_input_url" type="text" class="form-control"
+										placeholder="Bookmark URL">
+								</div>
+							</div>
+
+							<div id="add_action_buttons" class="row">
+								<div class="col-sm-4 col-sm-offset-8">
+									<button type="button" class="btn btn-default">Add</button>
+									<button type="button" class="btn btn-default">Delete</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- セクション -->
+		<div role="tabpanel" class="tab-pane active" id="setting">
+			<div class="tab_panel">
+				<div class="panel panel-default">
+					<div class="panel-body"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- フッタ -->
+	<footer></footer>
+
+	<!-- スクリプト -->
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

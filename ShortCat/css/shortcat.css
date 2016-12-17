@@ -1,24 +1,76 @@
 @CHARSET "UTF-8";
 
+body {
+	width: 760px;
+}
+
+/*ヘッダ*/
+header {
+	margin-left: 10px;
+}
+
+/*ナビゲーション*/
+ul.nav {
+	margin-left: 5px;
+}
+
+.tab_panel {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*キーボード*/
 button.key {
 	width: 50px;
 	height: 50px;
 }
 
-
-
-.btn-toolbar-1st {
-
+.btn-toolbar {
+	margin-left: 5px;
+	padding-bottom: 5px;
 }
 
-.btn-toolbar-2nd {
+#btn-toolbar-1st {
+	padding-top: 5px;
+}
+
+#btn-toolbar-2nd {
 	padding-left: 25px;
 }
 
-.btn-toolbar-3rd {
+#btn-toolbar-3rd {
 	padding-left: 50px;
 }
 
-.btn-toolbar-4th {
+#btn-toolbar-4th {
 	padding-left: 75px;
+}
+
+/*リスト*/
+.list_part {
+	width: 370px;
+	height: 280px;
+}
+
+#item_list {
+}
+
+#item_info {
+	float: right;
+}
+
+#items {
+	height: 206px;
+	overflow-x: auto;
+}
+
+/*追加*/
+#add_action_buttons button{
+	width: 100px;
+}
+
+/*フッタ*/
+footer {
+
 }
