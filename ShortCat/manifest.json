@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "ShortCat",
+	"version": "0.1",
+
+	"description": "Shortcut Extension",
+
+	"icons": {
+		"16": "images/BlackCat_16.png",
+		"48": "images/BlackCat_48.png",
+		"128": "images/BlackCat_128.png"
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"19": "images/BlackCat_19.png",
+			"38": "images/BlackCat_38.png"
+		},
+		"default_title": "ShortCat",
+		"default_popup": "popup.html"
+	}
+
+}
