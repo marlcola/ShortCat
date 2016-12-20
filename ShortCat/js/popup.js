@@ -34,9 +34,26 @@ $(function () {
 	document.onkeydown = function () {
 		var keyId = 'key_' + event.keyCode;
 		var message = '"' + event.key + '" : ' + keyId;
-		flush_message();
-		output_message(message);
-		reset_btn_color();
-		set_btn_color(keyId);
+		var mode = $('.tab-pane').filter('.active').attr('id');
+
+		if (mode === 'keyboard') {
+			flush_message();
+			output_message(message);
+			reset_btn_color();
+			set_btn_color(keyId);
+		}
 	}
+
+	var treeFunc = function (results) {
+		$.each(results, function () {
+			output_message(this.title);
+			if (this.hasOwnProperty('children')) {
+				treeFunc(this.children);
+			}
+		});
+	}
+
+	var tree = chrome.bookmarks.getTree(treeFunc);
+
+
 });

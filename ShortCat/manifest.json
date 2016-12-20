@@ -27,6 +27,11 @@
 		"default_title": "ShortCat",
 		// ポップアップページ
 		"default_popup": "popup.html"
-	}
+	},
+
+	//パーミッション
+	"permissions": [
+		"bookmarks"
+	]
 
 }
